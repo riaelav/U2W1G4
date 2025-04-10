@@ -1,0 +1,59 @@
+main {
+  background-color: rgb(102, 102, 102);
+  font-family: "Indie Flower";
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  height: 100vh;
+}
+
+main div {
+  width: 22%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main div h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.25rem 0;
+  white-space: nowrap;
+}
+main div p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.violet {
+  background-color: rgb(197, 197, 240);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(-3deg);
+}
+
+.yellow {
+  background-color: rgb(248, 249, 199);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(2deg);
+}
+
+.green {
+  background-color: rgb(181, 213, 183);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(1deg);
+}
+main > div:hover {
+  transform: rotate(0deg) scale(1.05);
+  transition: all 50ms;
+}
