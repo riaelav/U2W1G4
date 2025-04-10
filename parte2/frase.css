@@ -1,0 +1,46 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+main {
+  height: 100vh;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Bree Serif";
+}
+
+#testoAlternato {
+  border: solid 4px rgb(115, 114, 114);
+  padding: 2rem;
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+.parole {
+  color: rgb(98, 120, 129);
+}
+
+i:first-of-type {
+  position: absolute;
+  transform: translateY(-200px);
+}
+
+i:nth-of-type(2) {
+  position: absolute;
+  transform: translateY(-250px);
+}
+i:nth-of-type(3) {
+  position: absolute;
+  transform: translateY(-300px);
+}
+
+@keyframes {
+}
